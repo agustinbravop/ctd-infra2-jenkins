@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     tools {
-        maven: "maven-nodo-principal"
+        maven "maven-nodo-principal"
     }
 
     stages {
