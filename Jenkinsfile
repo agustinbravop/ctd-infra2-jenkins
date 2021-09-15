@@ -17,6 +17,9 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                dir ('maven-adderapp') {
+                    sh 'mvn test'
+                }
             }
         }
         stage('Deploy') {
