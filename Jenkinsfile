@@ -42,7 +42,7 @@ pipeline {
                     filePath = files[0].path;
 
                     nexusArtifactUploader(
-                        nexusVersion: "3.33.1-01"
+                        nexusVersion: "3.33.1-01",
                         protocol: "http",
                         nexusUrl: "${env.NEXUS}:8081",
                         groupId: pom.groupId,
