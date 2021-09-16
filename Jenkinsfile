@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                dir ('proyecto-maven') {
+                dir ('maven-adderapp') {
                     sh 'mvn -B -DskipTests clean package'
                 }
             }
@@ -17,7 +17,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                dir ('proyecto-maven') {
+                dir ('maven-adderapp') {
                     sh 'mvn test'
                 }
             }
@@ -29,8 +29,13 @@ pipeline {
         }
     }
     post {
+        always {
+            dir('maven-adderapp') {
+                junit 'target/surefire-reports/*.xml'
+            }
+        }
         success {
-            dir ('proyecto-maven') {
+            dir ('maven-adderapp') {
                 archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
             }
         }
