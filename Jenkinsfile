@@ -48,7 +48,7 @@ pipeline {
                         groupId: pom.groupId,
                         version: pom.version,
                         repository: "maven-jenkins-dh",
-                        credentialsId: "nexus",
+                        credentialsId: "nexus-credentials",
                         artifacts: [
                             [
                                 artifactId: pom.artifactId,
