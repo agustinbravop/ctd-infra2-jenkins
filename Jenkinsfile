@@ -47,7 +47,7 @@ pipeline {
                         nexusUrl: "${env.NEXUS}:8081",
                         groupId: pom.groupId,
                         version: pom.version,
-                        repository: "maven-jenkins",
+                        repository: "maven-jenkins-dh",
                         credentialsId: "nexus",
                         artifacts: [
                             [
