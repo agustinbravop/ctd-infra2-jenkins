@@ -1,0 +1,18 @@
+version: '3'
+services:
+  nexus:
+    container_name: nexus-main
+    image: 'docker.io/sonatype/nexus3:3.33.1'
+    user: 'nexus'
+    environment:
+      BASE_URL: 'http://localhost:8081'
+      NEXUS_SECURITY_RANDOMPASSWORD: 'false'
+    ports:
+      - '8081:8081'
+      - '50001:50001'
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - './nexus_data:/nexus-data'
