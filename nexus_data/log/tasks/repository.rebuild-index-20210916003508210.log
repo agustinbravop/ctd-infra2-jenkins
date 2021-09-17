@@ -1,0 +1,7 @@
+2021-09-16 00:35:08,211+0000 INFO  [quartz-9-thread-2]  *SYSTEM org.sonatype.nexus.repository.search.index.RebuildIndexTask - Task information:
+2021-09-16 00:35:08,228+0000 INFO  [quartz-9-thread-2]  *SYSTEM org.sonatype.nexus.repository.search.index.RebuildIndexTask -  ID: 05376d1e-03e1-46ac-96d7-f6ca597b16e3
+2021-09-16 00:35:08,229+0000 INFO  [quartz-9-thread-2]  *SYSTEM org.sonatype.nexus.repository.search.index.RebuildIndexTask -  Type: repository.rebuild-index
+2021-09-16 00:35:08,229+0000 INFO  [quartz-9-thread-2]  *SYSTEM org.sonatype.nexus.repository.search.index.RebuildIndexTask -  Name: Repair - Rebuild repository search
+2021-09-16 00:35:08,230+0000 INFO  [quartz-9-thread-2]  *SYSTEM org.sonatype.nexus.repository.search.index.RebuildIndexTask -  Description: Rebuilding search index of maven-adderapp
+2021-09-16 00:35:08,246+0000 INFO  [quartz-9-thread-2]  *SYSTEM org.sonatype.nexus.repository.search.SearchFacetImpl - Rebuilding index of repository maven-adderapp
+2021-09-16 00:35:08,550+0000 INFO  [quartz-9-thread-2]  *SYSTEM org.sonatype.nexus.repository.search.index.RebuildIndexTask - Task complete
